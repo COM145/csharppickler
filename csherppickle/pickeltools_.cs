@@ -869,9 +869,10 @@ namespace csherppickle
             }
 
             // Convert to an integer, throwing an exception if invalid
-            if (data != null)
+            if (data.Count() == 8)
             {
-                return Encoding.GetEncoding("ISO-8859-1").GetString(Array.ConvertAll(data, i => (byte)i));
+                UInt32 val = BitConverter.ToUInt32(Array.ConvertAll(data, i => (byte)i), 0);
+                return val.ToString();
             }
             else
             {
@@ -944,7 +945,15 @@ namespace csherppickle
         }
         public static string read_bytes1(MemoryStream stream)
         {
-            return "";
+            int n = Convert.ToInt32(read_uint1(stream));
+
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            string val = string.Concat(data.Select(i => $"\\x{i:X2}"));
+            return val;
         }
         public static string read_bytes4(MemoryStream stream)
         {
@@ -964,7 +973,22 @@ namespace csherppickle
         }
         public static string read_unicodestring1(MemoryStream stream)
         {
-            return "[]";
+            int n = Convert.ToInt32(read_uint1(stream));
+
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            byte[] byteData = Array.ConvertAll(data, i => (byte)i);
+
+            // Create UTF-8 encoding with a custom fallback for "surrogatepass" behavior
+            Encoding utf8WithSurrogatePass = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false, throwOnInvalidBytes: false);
+
+            // Decode byte array to string
+            string decodedString = utf8WithSurrogatePass.GetString(byteData);
+            return decodedString;
+
         }
         public static string read_unicodestring4(MemoryStream stream)
         {

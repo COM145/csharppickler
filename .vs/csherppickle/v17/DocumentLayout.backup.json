@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\repo\\csherppickle\\",
+  "WorkspaceRootPath": "E:\\repo\\csharppickler\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csherppickle\\csherppickle\\unpacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|solutionrelative:csherppickle\\pickeltools_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csharppickler\\csherppickle\\unpacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|solutionrelative:csherppickle\\unpacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csherppickle\\csherppickle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csharppickler\\csherppickle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|solutionrelative:csherppickle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csherppickle\\csherppickle\\pickeltools_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|solutionrelative:csherppickle\\pickeltools_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 212,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,42 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "pickeltools_.cs",
-              "DocumentMoniker": "E:\\repo\\csherppickle\\csherppickle\\pickeltools_.cs",
+              "DocumentMoniker": "E:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs",
               "RelativeDocumentMoniker": "csherppickle\\pickeltools_.cs",
-              "ToolTip": "E:\\repo\\csherppickle\\csherppickle\\pickeltools_.cs",
+              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs",
               "RelativeToolTip": "csherppickle\\pickeltools_.cs",
-              "ViewState": "AgIAAP8CAAAAAAAAAAAewBcDAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8DAAAAAAAAAAAlwLoDAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T13:16:36.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Unpacker.cs",
-              "DocumentMoniker": "E:\\repo\\csherppickle\\csherppickle\\Unpacker.cs",
+              "DocumentMoniker": "E:\\repo\\csharppickler\\csherppickle\\Unpacker.cs",
               "RelativeDocumentMoniker": "csherppickle\\Unpacker.cs",
-              "ToolTip": "E:\\repo\\csherppickle\\csherppickle\\Unpacker.cs",
+              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\Unpacker.cs",
               "RelativeToolTip": "csherppickle\\Unpacker.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA0wCEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAvwJMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T12:28:32.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\repo\\csherppickle\\csherppickle\\Program.cs",
+              "DocumentMoniker": "E:\\repo\\csharppickler\\csherppickle\\Program.cs",
               "RelativeDocumentMoniker": "csherppickle\\Program.cs",
-              "ToolTip": "E:\\repo\\csherppickle\\csherppickle\\Program.cs",
+              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\Program.cs",
               "RelativeToolTip": "csherppickle\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:27:58.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T12:27:58.359Z"
             }
           ]
         },

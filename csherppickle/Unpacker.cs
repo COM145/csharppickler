@@ -145,7 +145,7 @@ namespace csherppickle
                 if (arg != null || !string.IsNullOrWhiteSpace(markmsg))
                 {
                     
-                    sb.Append(new string(' ', 10 - (opcode.name.Length-1)));
+                    sb.Append(new string(' ', 10 + (opcode.name.Length-1)));
 
                     // Append the argument if it's not null
                     if (arg != null)
@@ -189,7 +189,7 @@ namespace csherppickle
                 }
                 sb.AppendLine();
             }
-            sb.AppendLine($"highest protocol among opcodes ={maxproto}");
+            sb.AppendLine($"highest protocol among opcodes = {maxproto}");
             if (stack.Count > 0)
             {
                 throw new Exception("stack not empty after STOP");
