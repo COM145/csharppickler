@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\repo\\csharppickler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csharppickler\\csherppickle\\unpacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|solutionrelative:csherppickle\\unpacker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csharppickler\\csherppickle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|solutionrelative:csherppickle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|e:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C57246C-CD57-431B-8029-1D753369C0DA}|csherppickle\\csherppickle.csproj|solutionrelative:csherppickle\\pickeltools_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{da7e21aa-da94-452d-8aa1-d1b23f73f576}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pickeltools_.cs",
+              "DocumentMoniker": "E:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs",
+              "RelativeDocumentMoniker": "csherppickle\\pickeltools_.cs",
+              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs",
+              "RelativeToolTip": "csherppickle\\pickeltools_.cs",
+              "ViewState": "AgIAAP8CAAAAAAAAAAAewBcDAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T13:16:36.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Unpacker.cs",
+              "DocumentMoniker": "E:\\repo\\csharppickler\\csherppickle\\Unpacker.cs",
+              "RelativeDocumentMoniker": "csherppickle\\Unpacker.cs",
+              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\Unpacker.cs",
+              "RelativeToolTip": "csherppickle\\Unpacker.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T12:28:32.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\repo\\csharppickler\\csherppickle\\Program.cs",
+              "RelativeDocumentMoniker": "csherppickle\\Program.cs",
+              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\Program.cs",
+              "RelativeToolTip": "csherppickle\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T12:27:58.359Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 188,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
