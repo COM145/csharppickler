@@ -779,7 +779,17 @@ namespace csherppickle
         }
         public static string read_decimalnl_short(MemoryStream stream)
         {
-            return "";
+            string s = read_stringnl(stream, false);
+            if(s == "00")
+            {
+                return "false";
+            }
+            else if(s == "01")
+            {
+                return "true";
+            }
+            int result = Convert.ToInt32(s);
+            return result.ToString();
         }
         public static string read_uint1(MemoryStream stream)
         {
@@ -937,11 +947,31 @@ namespace csherppickle
         }
         public static string read_string1(MemoryStream stream)
         {
-            return "";
+            int n = Convert.ToInt32(read_uint1(stream));
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            byte[] byteData = data.Select(i => (byte)i).ToArray();
+
+            // Decode the byte array using ISO-8859-1 (Latin-1) encoding
+            string decodedString = Encoding.GetEncoding("ISO-8859-1").GetString(byteData);
+            return decodedString;
         }
         public static string read_string4(MemoryStream stream)
         {
-            return "";
+            int n = Convert.ToInt32(read_int4(stream));
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            byte[] byteData = data.Select(i => (byte)i).ToArray();
+
+            // Decode the byte array using ISO-8859-1 (Latin-1) encoding
+            string decodedString = Encoding.GetEncoding("ISO-8859-1").GetString(byteData);
+            return decodedString;
         }
         public static string read_bytes1(MemoryStream stream)
         {
@@ -957,19 +987,61 @@ namespace csherppickle
         }
         public static string read_bytes4(MemoryStream stream)
         {
-            return "[]";
+            int n = Convert.ToInt32(read_uint4(stream));
+
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            string val = string.Concat(data.Select(i => $"\\x{i:X2}"));
+            return val;
         }
         public static string read_bytes8(MemoryStream stream)
         {
-            return "[]";
+            int n = Convert.ToInt32(read_uint8(stream));
+
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            string val = string.Concat(data.Select(i => $"\\x{i:X2}"));
+            return val;
         }
         public static string read_bytearray8(MemoryStream stream)
         {
-            return "[]";
+            int n = Convert.ToInt32(read_uint8(stream));
+
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            string val = string.Concat(data.Select(i => $"\\x{i:X2}"));
+            return $"bytearray: {val}";
         }
         public static string read_unicodestringnl(MemoryStream stream)
         {
-            return "[]";
+            List<int> intData = new List<int>();
+
+            while (true)
+            {
+                int readByte = stream.ReadByte(); // Read a single byte from the stream
+                if (readByte == -1) // End of stream
+                {
+                    throw new Exception("No newline found when trying to read stringnl");
+                }
+
+                if (readByte == '\n') // Stop at newline
+                {
+                    break;
+                }
+
+                intData.Add(readByte); // Add byte to the list
+            }
+            return Encoding.GetEncoding("ISO-8859-1").GetString(Array.ConvertAll(intData.ToArray(), i => (byte)i));
+
         }
         public static string read_unicodestring1(MemoryStream stream)
         {
@@ -1010,15 +1082,45 @@ namespace csherppickle
         }
         public static string read_unicodestring8(MemoryStream stream)
         {
-            return "[]";
+            UInt32 n = Convert.ToUInt32(read_uint8(stream));
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            // Convert int[] to byte[]
+            byte[] byteData = Array.ConvertAll(data, i => (byte)i);
+
+            // Create UTF-8 encoding with a custom fallback for "surrogatepass" behavior
+            Encoding utf8WithSurrogatePass = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false, throwOnInvalidBytes: false);
+
+            // Decode byte array to string
+            string decodedString = utf8WithSurrogatePass.GetString(byteData);
+            return decodedString;
         }
         public static string read_decimalnl_long(MemoryStream stream)
         {
-            return "[]";
+            string s = read_stringnl(stream, false);
+            if (s.EndsWith("L"))
+            {
+                s = s.Substring(0, s.Length - 1);
+            }
+            if (s == "00")
+            {
+                return "false";
+            }
+            else if (s == "01")
+            {
+                return "true";
+            }
+            int result = Convert.ToInt32(s);
+            return result.ToString();
         }
         public static string read_floatnl(MemoryStream stream)
         {
-            return "[]";
+            string s = read_stringnl(stream, false);
+            double result = Convert.ToDouble(s);
+            return result.ToString();
         }
         public static string read_float8(MemoryStream stream)
         {
@@ -1037,11 +1139,29 @@ namespace csherppickle
         }
         public static string read_long1(MemoryStream stream)
         {
-            return "[]";
+            int n = Convert.ToInt32(read_uint1(stream));
+
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            byte[] byteData = Array.ConvertAll(data, i => (byte)i);
+            int result = FromBytes(byteData, isLittleEndian: true, signed: false);
+            return result.ToString();
         }
         public static string read_long4(MemoryStream stream)
         {
-            return "[]";
+            int n = Convert.ToInt32(read_int4(stream));
+
+            int[] data = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                data[i] = stream.ReadByte();
+            }
+            byte[] byteData = Array.ConvertAll(data, i => (byte)i);
+            int result = FromBytes(byteData, isLittleEndian: true, signed: false);
+            return result.ToString();
         }
     }
 }

@@ -38,9 +38,9 @@
               "Title": "pickeltools_.cs",
               "DocumentMoniker": "E:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs",
               "RelativeDocumentMoniker": "csherppickle\\pickeltools_.cs",
-              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs",
-              "RelativeToolTip": "csherppickle\\pickeltools_.cs",
-              "ViewState": "AgIAAJ8DAAAAAAAAAAAlwLoDAABHAAAAAAAAAA==",
+              "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\pickeltools_.cs*",
+              "RelativeToolTip": "csherppickle\\pickeltools_.cs*",
+              "ViewState": "AgIAAJ4DAAAAAAAAAIA2wLQDAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T13:16:36.379Z",
               "EditorCaption": ""
@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "csherppickle\\Unpacker.cs",
               "ToolTip": "E:\\repo\\csharppickler\\csherppickle\\Unpacker.cs",
               "RelativeToolTip": "csherppickle\\Unpacker.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAvwJMAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAgwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T12:28:32.207Z",
               "EditorCaption": ""
@@ -68,7 +68,8 @@
               "RelativeToolTip": "csherppickle\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:27:58.359Z"
+              "WhenOpened": "2024-12-10T12:27:58.359Z",
+              "EditorCaption": ""
             }
           ]
         },
